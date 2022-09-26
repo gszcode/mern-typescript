@@ -1,0 +1,22 @@
+@api = http://localhost:4000
+
+GET {{api}}/videos
+ 
+###
+GET {{api}}/videos/1
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=XrOfWU3wBmc",
+  "title": "ibaicito",
+  "description": "this is a ibai video"
+}
+
+###
+DELETE {{api}}/videos/1
+
+###
+PUT {{api}}/videos/1
